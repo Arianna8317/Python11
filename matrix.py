@@ -35,7 +35,7 @@ class Matrix:
         p = len(self.matrix[0])
         if p != len(other.matrix):
             ''' Матрицы разной размерности '''
-            return False
+            return False  # raise ValueError
         else:
             result = Matrix()
             sum_2 = [] 
